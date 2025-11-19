@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Pasaportes | Mundo Aventura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="organismo-buy">
+        
+        <header class="header-nav">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="Logo Mundo Aventura" class="logo-img">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">INICIO</a> 
+                <span class="separator">|</span>
+                <a href="atracciones.html" class="nav-item">ATRACCIONES</a>
+                <span class="separator">|</span>
+                <a href="comprar.html" class="nav-item active">COMPRAR</a>
+            </nav>
+        </header>
+
+        <main class="buy-container">
+            <h2 class="buy-title">SELECCIONA TU TIPO DE PASAPORTE</h2>
+
+            <section class="passports-grid">
+                
+                <div class="passport-card">
+                    <img src="imagenes/kids.png" alt="Pasaporte Kids" class="passport-logo">
+                    <p class="passport-name">Pasaporte Kids + Bono por lluvia</p>
+                    <p class="passport-description">(Producto solo válido para compra en tienda virtual)</p>
+                    
+                    <div class="quantity-control">
+                        <label for="kids-qty" class="quantity-label">cantidad</label>
+                        <div class="quantity-buttons">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" id="kids-qty" value="0" readonly class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passport-card">
+                    <img src="imagenes/silver.png" alt="Pasaporte Silver" class="passport-logo">
+                    <p class="passport-name">Pasaporte Silver + Bono por lluvia</p>
+                    <p class="passport-description">Incluye pasaporte de 29 atracciones + Bono por lluvia (Producto solo válido para compra en tienda virtual durante el mes de agosto)</p>
+                    
+                    <div class="quantity-control">
+                        <label for="silver-qty" class="quantity-label">cantidad</label>
+                        <div class="quantity-buttons">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" id="silver-qty" value="0" readonly class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passport-card">
+                    <img src="imagenes/gold.png" alt="Pasaporte Gold" class="passport-logo">
+                    <p class="passport-name">GOLD + BONO LLUVIA</p>
+                    <p class="passport-description">Con atracciones de Alto Impacto incluida la nueva GRAVITY! Incluye pasaporte de 33 atracciones.</p>
+                    
+                    <div class="quantity-control">
+                        <label for="gold-qty" class="quantity-label">cantidad</label>
+                        <div class="quantity-buttons">
+                            <button class="qty-btn minus">-</button>
+                            <input type="text" id="gold-qty" value="0" readonly class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <section class="scheduling-section">
+                <p class="scheduling-date-label">AGENDADO: MIÉRCOLES/19/NOVIEMBRE/2025</p>
+                <div class="date-selector-placeholder">
+                </div>
+            </section>
+            
+            <section class="summary-section">
+                <p class="summary-label">AGENDADO PARA: MIÉRCOLES/19/NOVIEMBRE/2025</p>
+                <h3 class="summary-title">PRODUCTOS:</h3>
+
+                <div class="summary-total">
+                    <span class="total-label">TOTAL:</span>
+                    <span class="total-value">$0</span>
+                </div>
+                
+                <a href="pago.html">
+                    <button class="next-button" disabled>SIGUIENTE</button>
+                </a>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

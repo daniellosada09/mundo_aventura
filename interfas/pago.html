@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Pago | Mundo Aventura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="organismo-pago">
+        
+        <header class="header-nav">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="Logo Mundo Aventura" class="logo-img">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">INICIO</a> 
+                <span class="separator">|</span>
+                <a href="atracciones.html" class="nav-item">ATRACCIONES</a>
+                <span class="separator">|</span>
+                <a href="comprar.html" class="nav-item">COMPRAR</a>
+            </nav>
+        </header>
+
+        <main class="payment-container">
+            <div class="payment-logo-wrapper">
+                 <img src="imagenes/logo.png" alt="Logo Mundo Aventura" class="payment-logo">
+            </div>
+
+            <section class="payment-form-card">
+                <h3 class="form-title">CONFIRMAR INFORMACIÓN DE PAGO</h3>
+                
+                <form class="payment-form">
+                    
+                    <div class="form-group">
+                        <i class="fa-solid fa-user icon"></i>
+                        <input type="text" id="nombre" placeholder="NOMBRE COMPLETO" required>
+                    </div>
+
+                    <div class="form-group">
+                        <i class="fa-solid fa-credit-card icon"></i>
+                        <input type="text" id="cuenta" placeholder="NÚMERO DE CUENTA / TARJETA" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <input type="email" id="correo" placeholder="CORREO ELECTRÓNICO" required>
+                    </div>
+
+                    <a href="confirmacion.html">
+                        <button type="button" class="confirm-button">CONFIRMAR PAGO</button>
+                    </a>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
